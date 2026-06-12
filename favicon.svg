@@ -1,21 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
-  <!-- Steam wisps -->
-  <g stroke="#ff0157" stroke-width="1.5" stroke-linecap="round" fill="none">
-    <path d="M11,8 C11,6.5 13,6.5 13,5 C13,3.5 11,3.5 11,2"/>
-    <path d="M16,7 C16,5.5 18,5.5 18,4 C18,2.5 16,2.5 16,1"/>
-    <path d="M21,8 C21,6.5 23,6.5 23,5 C23,3.5 21,3.5 21,2"/>
+
+  <!-- Fork (left) -->
+  <g stroke="#ff0157" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Tines -->
+    <line x1="5"   y1="3" x2="5"   y2="10"/>
+    <line x1="7.5" y1="3" x2="7.5" y2="10"/>
+    <line x1="10"  y1="3" x2="10"  y2="10"/>
+    <!-- Tine base arc -->
+    <path d="M5,10 Q5,13 7.5,14 Q10,13 10,10"/>
+    <!-- Handle -->
+    <line x1="7.5" y1="14" x2="7.5" y2="29"/>
   </g>
 
-  <!-- Bowl body -->
-  <path d="M5,16 Q5,26 16,26 Q27,26 27,16 Z" fill="#ff0157"/>
+  <!-- Plate circle -->
+  <circle cx="16" cy="16" r="8.5" fill="#ff0157" opacity="0.15"/>
+  <circle cx="16" cy="16" r="8.5" fill="none" stroke="#ff0157" stroke-width="1.8"/>
+  <!-- Inner ring -->
+  <circle cx="16" cy="16" r="5.5" fill="none" stroke="#ff0157" stroke-width="0.8" opacity="0.5"/>
 
-  <!-- Bowl rim -->
-  <rect x="4" y="13.5" width="24" height="3" rx="1.5" fill="#cc0044"/>
+  <!-- Knife (right) -->
+  <g stroke="#ff0157" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Blade -->
+    <line x1="24.5" y1="3"  x2="24.5" y2="29"/>
+    <!-- Blade top curved edge -->
+    <path d="M24.5,3 C24.5,3 27,6 27,11 L24.5,12"/>
+  </g>
 
-  <!-- Highlight shine on bowl -->
-  <path d="M8,17 Q9,22 12,23.5" stroke="rgba(255,255,255,0.35)" stroke-width="2" stroke-linecap="round" fill="none"/>
-
-  <!-- Base / foot of bowl -->
-  <rect x="11" y="26" width="10" height="2" rx="1" fill="#cc0044"/>
-  <rect x="9"  y="28" width="14" height="2" rx="1" fill="#ff0157"/>
 </svg>
