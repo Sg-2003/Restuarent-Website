@@ -76,20 +76,6 @@ header.sticky .logo{
 header .logo span{
     color: #ff0157;
 }
-header .logo-img{
-    height: 44px;
-    width: auto;
-    display: block;
-    filter: drop-shadow(0 0 4px rgba(255,1,87,0.3));
-    transition: 0.3s;
-}
-header.sticky .logo-img{
-    filter: drop-shadow(0 0 4px rgba(255,1,87,0.5)) invert(0);
-}
-header .logo-img:hover{
-    filter: drop-shadow(0 0 8px rgba(255,1,87,0.6));
-    transform: scale(1.04);
-}
 header .navigation{
     position: relative;
     display: flex;
